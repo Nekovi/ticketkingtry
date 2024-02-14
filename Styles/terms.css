@@ -1,0 +1,197 @@
+html {
+    scroll-behavior:smooth;
+    box-sizing: border-box;
+  }
+  body {
+      font-family:"Montserrat";
+      margin: 0;
+      color:black
+      
+  }
+  h1, h2, h3, h4, h5, h6 {
+      font-family: "Montserrat"
+  }
+
+  .whitetext {
+    color:white;
+  }
+
+  .leftalign {
+    text-align:left;
+  }
+
+  .bold {
+    font-weight:bold;
+  }
+
+  .terms-section{
+      color:black;
+      padding: 50px;
+      text-align: center;
+  }
+
+  div.terms-section {
+    margin-top: 30px; 
+    width: 700px;
+    text-align: left;
+    position: absolute;
+    color:black;
+    margin-left:100px;
+    line-height:35px;
+}
+
+
+/* Navigation Bar */
+
+
+.navbar {
+    padding: 0 0 0;  
+}
+
+#normal{
+    
+    clip:rect(0px,1900px,100px,0)
+}
+
+.navbar-brand {
+    font-family:Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left:10px;   
+}
+  
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.7rem;
+    font-family: "Montserrat";    
+    font-weight:lighter;
+}
+  
+#title {
+    background-color:#eeeeee;
+    text-align:center;    
+}
+
+#title .container-fluid {
+  padding:1.5% 2% 11%;
+  height:1000px;    
+}
+  
+ 
+.navbar-background {
+  position:absolute;
+  width: 100%;
+  height: 750px;
+  left:0px;
+  right:0px;  
+  padding:0px;
+  top:0px;
+  z-index:0;
+  opacity:1;
+}
+
+#mobile {
+  display:none;
+}
+ 
+#crown {
+  position:relative;
+  height:30px;
+  bottom:8px;  
+}
+  
+#title-text{  
+  position:relative;  
+  color:white;
+  z-index:1;
+  top:45px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 80px;  
+}
+
+.terms{
+    padding:1% 8%;
+    display:block;
+    align-items:center;
+}
+.terms-section{
+    padding-left:10px;
+    padding-right:0px;
+}
+
+
+
+.header{
+    text-align:left;
+}
+
+
+.main-header {
+    font-size: 40px;
+    text-align:left;
+}
+
+
+  
+
+
+#footer {
+    text-align:center;
+  }
+  
+  div.footer {
+    width: 100%;
+  }
+  
+  div.copyright {
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+  
+  div.footer a, a:visited {
+      text-decoration: none;
+      color: rgb(128, 128, 128);
+      padding: 0 5px 0 2px;
+  } 
+  
+  div.footer a:hover {
+    text-decoration: none;
+    color: rgba(12, 0, 86, 1);
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+
+@media (max-width: 800px) {
+    div.terms-section {
+        margin-top: 30px;
+        width: 440px;
+    }
+    
+    .header1 {
+        font-size: 32px;
+    }
+
+    #phone{
+        clip:rect(0px,1900px,50px,0)
+    }
+    #title .container-fluid {
+        padding:1.5% 2% 11%;
+        height:1300px;    
+      }
+
+
+}
+
+#Footer{
+   
+}

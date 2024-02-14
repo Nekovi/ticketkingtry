@@ -1,0 +1,219 @@
+html {
+    scroll-behavior:smooth;
+    box-sizing: border-box;
+  }
+  body {
+      font-family:"Montserrat";
+      margin: 0;
+      
+  }
+  h1, h2, h3, h4, h5, h6 {
+      font-family: "Montserrat"
+  }
+
+  .whitetext {
+    color:white;
+  }
+
+  .leftalign {
+    text-align:left;
+  }
+
+  .bold {
+    font-weight:bold;
+  }
+
+
+
+/* Navigation Bar */
+
+
+.navbar {
+    padding: 0 0 4.5rem;  
+}
+
+.navbar-brand {
+    font-family:Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left:10px;   
+}
+  
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.7rem;
+    font-family: "Montserrat";    
+    font-weight:lighter;
+}
+  
+#title {
+    background-color:#E71414;
+    text-align:center;    
+}
+
+#title .container-fluid {
+  padding:1.5% 6% 11%;
+  height:810px;    
+}
+  
+ 
+.navbar-background {
+  position:absolute;
+  width: 100%;
+  height: 810px;
+  left:0px;
+  right:0px;  
+  padding:0px;
+  top:0px;
+  z-index:0;
+  opacity:1;
+}
+
+#mobile {
+  display:none;
+}
+ 
+#crown {
+  position:relative;
+  height:30px;
+  bottom:8px;  
+}
+  
+#title-text{  
+  position:relative;  
+  color:white;
+  z-index:1;
+  top:45px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 80px;  
+}
+
+div.aboutus-section {
+    margin-top: 30px; 
+    width: 700px;
+    text-align: left;
+    position: absolute;
+    color: rgb(255, 255, 255);
+}
+
+.header1 {
+    font-size: 48px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+section.ourteam {
+    margin: 20px auto;
+    width: 80%;
+}
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+
+  .card img{
+    width:40px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+
+#footer {
+    text-align:center;
+  }
+  
+  div.footer {
+    width: 100%;
+  }
+  
+  div.copyright {
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+  
+  div.footer a, a:visited {
+      text-decoration: none;
+      color: rgb(128, 128, 128);
+      padding: 0 5px 0 2px;
+  } 
+  
+  div.footer a:hover {
+    text-decoration: none;
+    color: rgba(12, 0, 86, 1);
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+
+@media (max-width: 1000px) {
+    div.aboutus-section {
+        margin-top: 30px;
+        width: 440px;
+    }
+    
+    .header1 {
+        font-size: 32px;
+    }
+
+    .card{
+      width:400px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+
+}
