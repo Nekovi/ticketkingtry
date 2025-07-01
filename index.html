@@ -1,549 +1,618 @@
 <!doctype html>
 <html lang="en">
-  <head>
-  
-    <meta charset="utf-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-     <!-- favicon -->
-    <link rel="icon" href="Photos/crown.png">
 
-    
-     <!-- Google Fonts -->
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital@1&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<head>
 
-     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="Styles/styles.css">
+  <meta charset="utf-8">
 
-    <title>TicketKing</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+  <!-- favicon -->
+  <link rel="icon" href="Photos/crown.png">
 
 
-  <body>
- 
-    <section  id="title">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital@1&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
 
-       <div class="container-fluid">
-        
-        <img  id="normal"class="navbar-background"src="Photos/bg-try4.jpg" alt="navbar-background">
-        <img  id="mobile"class="navbar-background"src="Photos/small4.jpg" alt="mobile backgrund">
-      
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="Styles/styles.css">
 
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <img id="crown" src="Photos/crown.png" alt="crown">
+  <title>TicketKing</title>
+</head>
 
-          <a class="navbar-brand" href="">TicketKing</a>
-  
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-  
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#Download">Download</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./sub/aboutus.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a id="login" class="nav-link" href="#cta">Login</a>
-              </li>
-            </ul>
-           
 
-          </div>
-       </nav>
-        
+<body>
 
-         <div class="mx-auto">
-         <h1 id="title-text">Don’t miss your  desired  tickets. <br> Get  it anywhere, anytime.</h1>
-         </div>
-         <div class="search-box mx-auto">
-          <img src="icons/search.png" alt="search icon" class="search-icon">
-          <input type="text" class="input" placeholder="Search for events, venues and cities"> </text>
-          
-        
-  
-         </div>
+  <section id="title">
 
-         <a href="#categories">
-         <div class="arrow-down">
-        
+    <div class="container-fluid">
+
+      <img id="normal" class="navbar-background" src="Photos/bg-try4.jpg" alt="navbar-background">
+      <img id="mobile" class="navbar-background" src="Photos/small4.jpg" alt="mobile backgrund">
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <img id="crown" src="Photos/crown.png" alt="crown">
+
+        <a class="navbar-brand" href="">TicketKing</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#Download">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sub/aboutus.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a id="login" class="nav-link" href="javascript:void(0);"
+                onclick="document.querySelector('.bg-modal').style.display = 'flex'">Login</a>
+
+            </li>
+          </ul>
+
+
         </div>
-          </a>
-   
-   
-     
+      </nav>
+
+
+      <div class="mx-auto">
+        <h1 id="title-text">Don’t miss your desired tickets. <br> Get it anywhere, anytime.</h1>
+      </div>
+      <div class="search-box mx-auto">
+        <img src="icons/search.png" alt="search icon" class="search-icon">
+        <input type="text" class="input" placeholder="Search for events, venues and cities"> </text>
+
+
+
       </div>
 
-    </section>
+      <a href="#categories">
+        <div class="arrow-down">
 
-  
+        </div>
+      </a>
+
+
+
+    </div>
+
+  </section>
+
+
 
   <section id="categories">
 
-    
+
     <h2 class="leftalign mx-auto bold">Browse by Category</h2>
     <p>Find the right Event</p>
 
 
 
-    <div class="row categories-row">  
-  
-      <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6"> 
-        
-        
+    <div class="row categories-row">
+
+      <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6">
+
+
         <button type="button" class="btn  btn-lg btn-block text-left categories-button">
-          <img src="icons/music-festival.png" alt="music festival"class="categories-icon">  Festivals
+          <img src="icons/music-festival.png" alt="music festival" class="categories-icon"> Festivals
 
         </button>
       </div>
-    
-      
-    
-      <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6"> 
-        
-          <button type="button" class="btn btn-lg btn-block  text-left categories-button">
-            <img src="icons/stage.png" alt="concert" class="categories-icon">
-
-            Concerts
-          
-          </button>
-  
-      </div>
-
-      <div class="categories-column col-lg-4 col-md-4 col-sm-6 col-6">
-        
-     
-          <button type="button" class="btn  btn-lg btn-block  text-left categories-button">
-            <img src="icons/club.png" alt="club" class="categories-icon">
-            Clubs
-          
-          </button>
-
-      </div>
-
-      <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6"> 
-        
-        
-        <button type="button" class="btn  btn-lg btn-block text-left categories-button">
-          <img src="icons/ice-hockey.png" alt="Sport"class="categories-icon"> 
-           Sports
-        </button>
-        </div>
-
-        <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6"> 
-        
-        
-          <button type="button" class="btn  btn-lg btn-block text-left categories-button">
-            <img src="icons/theater.png" alt="Theatre"class="categories-icon"> 
-             Theatre
-          </button>
-          </div>
-          <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6"> 
-        
-        
-            <button type="button" class="btn  btn-lg btn-block text-left categories-button">
-              <img src="icons/coupon.png" alt="Vouchers& Days out"class="categories-icon"> 
-               Sports
-            </button>
-            </div>
-    </div>   
-  <section id="Events">
 
 
-    <h2 class="leftalign mx-auto bold">Events</h2>
-    
-    <p>Highlighted events in your area</p>
-     
-    <div class="row Events-row">  
 
-      
-      <div class="categories-column col-lg-4 col-md-4 col-sm-6 col-6">
-        
-     
+      <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6">
+
         <button type="button" class="btn btn-lg btn-block  text-left categories-button">
+          <img src="icons/stage.png" alt="concert" class="categories-icon">
 
-          <table>
-          <td>
-            <img src="icons/jul-4.png" alt="date" class="categories-icon">
-          </td>
-          
-          <td class="Events-data">
-          
-          <h6>Chopin Salon</h6>
-           
-          <p> Przedmiescie,Warsaw </p>   
-          
-          </td>
-          
-          </table>
-          </button>
+          Concerts
+
+        </button>
+
       </div>
-        <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6"> 
+
+      <div class="categories-column col-lg-4 col-md-4 col-sm-6 col-6">
+
+
+        <button type="button" class="btn  btn-lg btn-block  text-left categories-button">
+          <img src="icons/club.png" alt="club" class="categories-icon">
+          Clubs
+
+        </button>
+
+      </div>
+
+      <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6">
+
+
+        <button type="button" class="btn  btn-lg btn-block text-left categories-button">
+          <img src="icons/ice-hockey.png" alt="Sport" class="categories-icon">
+          Sports
+        </button>
+      </div>
+
+      <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6">
+
+
+        <button type="button" class="btn  btn-lg btn-block text-left categories-button">
+          <img src="icons/theater.png" alt="Theatre" class="categories-icon">
+          Theatre
+        </button>
+      </div>
+      <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6">
+
+
+        <button type="button" class="btn  btn-lg btn-block text-left categories-button">
+          <img src="icons/coupon.png" alt="Vouchers& Days out" class="categories-icon">
+          Sports
+        </button>
+      </div>
+    </div>
+    <section id="Events">
+
+
+      <h2 class="leftalign mx-auto bold">Events</h2>
+
+      <p>Highlighted events in your area</p>
+
+      <div class="row Events-row">
+
+
+        <div class="categories-column col-lg-4 col-md-4 col-sm-6 col-6">
+
+
           <button type="button" class="btn btn-lg btn-block  text-left categories-button">
 
             <table>
-            <td>
-              <img src="icons/aug-16.png" alt="date" class="categories-icon">
-            </td>
-            
-            <td class="Events-data">
-            
-            <h6> Nouvelle Vague</h6>
-             
-            <p> Niebo,Warsaw </p>   
-            
-            </td>
-            
+              <td>
+                <img src="icons/jul-4.png" alt="date" class="categories-icon">
+              </td>
+
+              <td class="Events-data">
+
+                <h6>Chopin Salon</h6>
+
+                <p> Przedmiescie,Warsaw </p>
+
+              </td>
+
             </table>
-            </button>
-  
+          </button>
         </div>
-        <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6"> 
-       
-         
+        <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6">
           <button type="button" class="btn btn-lg btn-block  text-left categories-button">
 
-          <table>
-          <td>
-            <img src="icons/aug-27.png" alt="date" class="categories-icon">
-          </td>
-          
-          <td class="Events-data">
-          
-          <h6> Natalia Sikora </h6>
-           
-          <p> Stodola. Warsaw </p>   
-          
-          </td>
-          
-          </table>
+            <table>
+              <td>
+                <img src="icons/aug-16.png" alt="date" class="categories-icon">
+              </td>
+
+              <td class="Events-data">
+
+                <h6> Nouvelle Vague</h6>
+
+                <p> Niebo,Warsaw </p>
+
+              </td>
+
+            </table>
+          </button>
+
+        </div>
+        <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6">
+
+
+          <button type="button" class="btn btn-lg btn-block  text-left categories-button">
+
+            <table>
+              <td>
+                <img src="icons/aug-27.png" alt="date" class="categories-icon">
+              </td>
+
+              <td class="Events-data">
+
+                <h6> Natalia Sikora </h6>
+
+                <p> Stodola. Warsaw </p>
+
+              </td>
+
+            </table>
           </button>
 
         </div>
 
-        <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6"> 
-       
-         
+        <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6">
+
+
           <button type="button" class="btn btn-lg btn-block  text-left categories-button">
 
-          <table>
-           
-          <td>
-            <img src="icons/sep-2.png" alt="date" class="categories-icon">
-          </td>
-          
-          <td class="Events-data">
-          
-          <h6> Agnes Obel</h6>
-           
-          <p> Palladium . Warsaw </p>   
-        
-          </td>
-       
-          
-          </table>
+            <table>
+
+              <td>
+                <img src="icons/sep-2.png" alt="date" class="categories-icon">
+              </td>
+
+              <td class="Events-data">
+
+                <h6> Agnes Obel</h6>
+
+                <p> Palladium . Warsaw </p>
+
+              </td>
+
+
+            </table>
           </button>
 
         </div>
-        <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6"> 
-       
-         
+        <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6">
+
+
           <button type="button" class="btn btn-lg btn-block  text-left categories-button">
 
-          <table>
-          <td>
-            <img src="icons/sep-19.png" alt="date" class="categories-icon">
-          </td>
-          
-          <td class="Events-data">
-          
-          <h6>  Metronomy</h6>
-           
-          <p> Progresja. Warsaw </p>   
-        
-          </td>
-          
-          </table>
+            <table>
+              <td>
+                <img src="icons/sep-19.png" alt="date" class="categories-icon">
+              </td>
+
+              <td class="Events-data">
+
+                <h6> Metronomy</h6>
+
+                <p> Progresja. Warsaw </p>
+
+              </td>
+
+            </table>
           </button>
 
         </div>
-  
-        <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6"> 
-       
-         
+
+        <div class=" categories-column col-lg-4 col-md-4 col-sm-6 col-6">
+
+
           <button type="button" class="btn btn-lg btn-block  text-left categories-button">
 
-          <table>
-          <td>
-            <img src="icons/oct-2.png" alt="date" class="categories-icon">
-          </td>
-          
-          <td class="Events-data">
-          
-          <h6>Little dragon</h6>
-           
-          <p> Niebo,Warsaw </p>   
-          
-          </td>
-          
-          </table>
+            <table>
+              <td>
+                <img src="icons/oct-2.png" alt="date" class="categories-icon">
+              </td>
+
+              <td class="Events-data">
+
+                <h6>Little dragon</h6>
+
+                <p> Niebo,Warsaw </p>
+
+              </td>
+
+            </table>
           </button>
 
         </div>
-  
+
       </div>
-  
 
 
 
-    
 
-    
+
+
+
+
+    </section>
 
   </section>
 
-   </section>
-
-      <section id="slider-box">
-        <div class="container-fluid"> 
-        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselIndicators" data-slide-to="4"></li>            
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" " src="./Photos/concert.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item ">
-              <img class="d-block w-100" " src="./Photos/festival.jpg" alt= "Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" " src="./Photos/sport.jpg" alt="Third slide">
-            </div>            
-            <div class="carousel-item">
-              <img class="d-block w-100" " src="./Photos/theatre.jpg" alt="Fourth slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./Photos/clubnight.jpg" alt="Fifth slide">
-            </div>
+  <section id="slider-box">
+    <div class="container-fluid">
+      <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" " src=" ./Photos/concert.jpg" alt="First slide">
           </div>
-          <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <div class="carousel-item ">
+            <img class="d-block w-100" " src=" ./Photos/festival.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" " src=" ./Photos/sport.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" " src=" ./Photos/theatre.jpg" alt="Fourth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./Photos/clubnight.jpg" alt="Fifth slide">
+          </div>
         </div>
-        
+        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="Download">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12  ">
+          <img id="phone" src="Photos/Phone part.png" alt="phone">
+
         </div>
-        </section>
 
-      <section id="Download">
-       <div class="container-fluid">
-
-         <div class="row">
-           <div class="col-12 col-lg-6 col-md-6 col-sm-12  ">
-           <img id="phone" src="Photos/Phone part.png" alt="phone">
-           
-           </div>
-
-           <div class="col-12 col-lg-6 col-md-6 col-sm-12 download-div ">
-                 <h1>Get the best out of TicketKing</h1>
-                 <div class="ticket-div">
-                  <img src="icons/ticket.png" class="download-icon" alt="">
-                  <h6 class="download-text">Acces your tickets offline,anytime.</h6>
-                
-                </div>
-               
-                <div class="ping-div">
-                  <img src="icons/ping.png" class="download-icon" alt="">                                
-                  <h6 class="download-text">Get faster notifications for new tickets</h6>
-                </div>
-             
-                <div class=buy-div>
-                  <img src="icons/buy.png" class="download-icon buy" alt="">
-                  <h6 class="download-text">Buy your tickets instantly.</h6>
-                 </div>
-                 
-                 <div class="download-app">
-                     
-                  <button type="button" class="btn  btn-lg  text-left bt-dark download-button ">
-                    <img src="icons/App store.png" class="app-img" alt=""> <span>Download</span>
-                  </button>
-                      
-                  <button type="button" class="btn  btn-lg  text-left bt-dark download-button ">
-                    <img src="icons/Google play.png" class="app-img" alt=""> <span>Download</span>
-                  </button>
-
-                  </div>
-                 
-           </div>
-
-
-           
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 download-div ">
+          <h1>Get the best out of TicketKing</h1>
+          <div class="ticket-div">
+            <img src="icons/ticket.png" class="download-icon" alt="">
+            <h6 class="download-text">Acces your tickets offline,anytime.</h6>
 
           </div>
-          
+
+          <div class="ping-div">
+            <img src="icons/ping.png" class="download-icon" alt="">
+            <h6 class="download-text">Get faster notifications for new tickets</h6>
           </div>
-        
-      </section>
-     
-  
-      
-      <section id="customers" class="customers">
-        <div id="customers" class="customers-slide1">             
-          <div id="carouselSlidesOnly" class="carousel-customers mx-auto" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="./Photos/./customer-images/customer-image1.png" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Photos/./customer-images/customer-image2.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Photos/./customer-images/customer-image3.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Photos/./customer-images/customer-image-mobile1.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Photos/./customer-images/customer-image-mobile2.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Photos/./customer-images/customer-image-mobile3.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Photos/./customer-images/customer-image-mobile4.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Photos/./customer-images/customer-image-mobile5.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Photos/./customer-images/customer-image-mobile6.png" alt="Third slide">
-              </div>
-            </div>
-          </div>          
+
+          <div class=buy-div>
+            <img src="icons/buy.png" class="download-icon buy" alt="">
+            <h6 class="download-text">Buy your tickets instantly.</h6>
+          </div>
+
+          <div class="download-app">
+
+            <button type="button" class="btn  btn-lg  text-left bt-dark download-button ">
+              <img src="icons/App store.png" class="app-img" alt=""> <span>Download</span>
+            </button>
+
+            <button type="button" class="btn  btn-lg  text-left bt-dark download-button ">
+              <img src="icons/Google play.png" class="app-img" alt=""> <span>Download</span>
+            </button>
+
+          </div>
+
         </div>
 
-        <div id="customers" class="customers-slide2">             
-          <div id="carouselSlidesOnly" class="carousel-customers" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="./Photos/./customer-images/customer-image4.png" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Photos/./customer-images/customer-image5.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Photos/./customer-images/customer-image6.png" alt="Third slide">
-              </div>
-            </div>
-          </div>          
+
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section id="customers" class="customers">
+    <div id="customers" class="customers-slide1">
+      <div id="carouselSlidesOnly" class="carousel-customers mx-auto" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./Photos/./customer-images/customer-image1.png" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./Photos/./customer-images/customer-image2.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./Photos/./customer-images/customer-image3.png" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./Photos/./customer-images/customer-image-mobile1.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./Photos/./customer-images/customer-image-mobile2.png" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./Photos/./customer-images/customer-image-mobile3.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./Photos/./customer-images/customer-image-mobile4.png" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./Photos/./customer-images/customer-image-mobile5.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./Photos/./customer-images/customer-image-mobile6.png" alt="Third slide">
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div id="customers" class="customers-slide3">             
-          <div id="carouselSlidesOnly" class="carousel-customers" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="./Photos/./customer-images/customer-image7.png" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Photos/./customer-images/customer-image8.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Photos/./customer-images/customer-image9.png" alt="Third slide">
-              </div>
-            </div>
-          </div>          
+    <div id="customers" class="customers-slide2">
+      <div id="carouselSlidesOnly" class="carousel-customers" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./Photos/./customer-images/customer-image4.png" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./Photos/./customer-images/customer-image5.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./Photos/./customer-images/customer-image6.png" alt="Third slide">
+          </div>
         </div>
-      
-    </section>
+      </div>
+    </div>
 
-
-     
-
-
-      <section id="Footer">
-
-        <div id="footer" class="footer">
-          <a href="index.html">Home</a>          
-          <a  class="login" href="">Login</a>
-          <!-- <br> -->
-          <a href="">Download</a>          
-          <a href="./sub/contactus.html">Contact Us</a>
-          <!-- <br> -->
-          <a href="./sub/aboutus.html">About Us</a>
-          
-          <div class="copyright" style="cursor: pointer;">
-            &copy; Copyright by <a href="mailto: info@TicketKing.com">TicketKing</a>
+    <div id="customers" class="customers-slide3">
+      <div id="carouselSlidesOnly" class="carousel-customers" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./Photos/./customer-images/customer-image7.png" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./Photos/./customer-images/customer-image8.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./Photos/./customer-images/customer-image9.png" alt="Third slide">
+          </div>
         </div>
-          
-        </div>
+      </div>
+    </div>
 
-      </section>
+  </section>
 
-      <div class="bg-modal">
-       <div class="modal-content">
-         <div class="close">
 
-          +
-         </div>
-        <button onclick="window.location.href='https://facebook.com';" type="button" class="btn btn-lg btn-block text-left modal-button">
-          <table>
-             <tr>
-               <td>
-          <img src="icons/facebook.png" alt="">
-                </td>
-                <td>
-          <h6>Continue with facebook</h6>
-        </td>
-          
-           </tr>
-        </table>
-        </button>
-       <div class="hr-part">
+
+
+
+  <section id="Footer">
+
+    <div id="footer" class="footer">
+      <a href="index.html">Home</a>
+      <a class="login" href="">Login</a>
+      <!-- <br> -->
+      <a href="">Download</a>
+      <a href="./sub/contactus.html">Contact Us</a>
+      <!-- <br> -->
+      <a href="./sub/aboutus.html">About Us</a>
+
+      <div class="copyright" style="cursor: pointer;">
+        &copy; Copyright by <a href="mailto: info@TicketKing.com">TicketKing</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="bg-modal">
+    <div class="modal-content">
+      <div class="close" onclick="document.querySelector('.bg-modal').style.display = 'none'">+</div>
+
+      <button onclick="window.location.href='https://facebook.com';" type="button"
+        class="btn modal-button facebook-button">
+        <img src="icons/facebook.png" alt="facebook icon" class="facebook-icon">
+        <span>Continue with Facebook</span>
+      </button>
+
+      <div class="hr-part">
         <hr id="hr1">
         <p>or</p>
         <hr id="hr2">
-       </div>
-
-      <div class="modal-box mx-auto">
-         
-        <input type="email" class="email" placeholder="Type your email"> 
-
-       </div>
-
-       <div class="modal-box2 mx-auto">
-         
-        <p>Continue with email</p> 
-
-       </div>
-       <p id="finish-p">By proceeding you confirm that your are 16 years or older and agree with our <a href="./sub/terms .html"> terms and conditions.</a></p>
-
       </div>
-    
-    
+
+      <!-- ✅ Email gönderme formu -->
+      <form id="login-form" class="form-wrapper">
+        <div class="modal-box mx-auto">
+          <input type="email" id="email" class="email" placeholder="Type your email" required>
+        </div>
+
+        <div class="modal-box2 mx-auto">
+          <button type="submit" class="btn btn-block modal-button">Send Code</button>
+        </div>
+      </form>
+
+      <!-- ✅ Kod doğrulama formu (başta gizli) -->
+      <form id="code-form" class="form-wrapper" style="display: none;">
+        <div class="modal-box mx-auto">
+          <input type="text" id="verification-code" class="email" placeholder="Enter the 6-digit code" required>
+        </div>
+
+        <div class="modal-box2 mx-auto">
+          <button type="submit" class="btn btn-block modal-button">Verify Code</button>
+        </div>
+      </form>
+
+      <p id="finish-p">
+        By proceeding you confirm that your are 16 years or older and agree with our
+        <a href="./sub/terms.html">terms and conditions.</a>
+      </p>
+    </div>
+  </div>
 
 
+  <!-- ✅ FORM STARTS HERE -->
+  <form id="login-form" class="form-wrapper">
+    <div class="modal-box mx-auto">
+      <input type="email" id="email" class="email" placeholder="Type your email" required>
+    </div>
 
-    
+    <div class="modal-box2 mx-auto">
+      <button type="submit" class="btn btn-block modal-button">Send Code</button>
+    </div>
+  </form>
+
+  <!-- Yeni kod doğrulama alanı -->
+  <form id="verify-form" class="form-wrapper" style="display:none;">
+    <div class="modal-box mx-auto">
+      <input type="text" id="code" placeholder="Enter the 6-digit code" required>
+    </div>
+
+    <div class="modal-box2 mx-auto">
+      <button type="submit" class="btn btn-block modal-button">Verify Code</button>
+    </div>
+  </form>
+
+  </form>
+  <!-- ✅ FORM ENDS HERE -->
+
+  <p id="finish-p">
+    By proceeding you confirm that your are 16 years or older and agree with our
+    <a href="./sub/terms .html">terms and conditions.</a>
+  </p>
+  </div>
+  </div>
+  <!-- Kod girme alanı (başta gizli) -->
+  <form id="code-form" class="form-wrapper" style="display: none;">
+    <div class="modal-box mx-auto">
+      <input type="text" id="verification-code" class="email" placeholder="Enter your verification code" required>
+    </div>
+    <div class="modal-box2 mx-auto">
+      <button type="submit" class="btn btn-block modal-button">Verify</button>
+    </div>
+  </form>
 
 
-   <!-- Bootstrap Scripts -->
-     <script type="text/javascript" src="scripts/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+  <!-- Bootstrap Scripts -->
+  <script type="text/javascript" src="scripts/script.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const userEmail = localStorage.getItem('userEmail');
+      if (userEmail) {
+        const username = userEmail.split('@')[0];
+        const loginLink = document.getElementById('login');
+        if (loginLink) {
+          loginLink.textContent = `Hi, ${username}`;
+          loginLink.href = '#';
+          loginLink.onclick = null;
+        }
+      }
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

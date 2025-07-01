@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Profile | TicketKing</title>
+    <link rel="stylesheet" href="Styles/styles.css" />
+</head>
+
+<body>
+
+    <div class="profile-box">
+        <img src="https://www.gravatar.com/avatar?d=mp&s=120" alt="Profile Picture" class="profile-img" />
+        <h1>Welcome to TicketKing!</h1>
+        <p id="user-email">Loading your email...</p>
+        <p id="username">Username: loading...</p>
+        <p id="signup-date">Signed up on: 01 July 2025</p>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+
+        <!-- Kod doğrulama formu -->
+        <form id="code-form" style="display:none; margin-top: 20px;">
+            <label for="verification-code" style="display:block; margin-bottom: 8px; font-weight: 600;">
+                Enter your code
+            </label>
+            <input
+                id="verification-code"
+                type="text"
+                placeholder="Enter your code"
+                required
+            />
+            <button type="submit">
+                Verify Code
+            </button>
+        </form>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const email = params.get('email');
+
+        if (email) {
+            document.getElementById('user-email').textContent = `You are logged in as: ${email}`;
+
+            const username = email.split('@')[0];
+            document.getElementById('username').textContent = `Username: ${username}`;
+
+            // Kod formunu göster
+            document.getElementById('code-form').style.display = 'block';
+        } else {
+            document.getElementById('user-email').textContent = "No email found!";
+            document.getElementById('username').style.display = 'none';
+        }
+
+        function logout() {
+            window.location.href = "index.html";
+        }
+
+        // Kod doğrulama işlemi
+        document.getElementById('code-form').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const code = document.getElementById('verification-code').value;
+
+            try {
+                const response = await fetch('http://localhost:3002/api/verify-code', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, code })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    alert('Login successful!');
+                    // İstersen başka sayfaya yönlendirme yapabilirsin
+                    // window.location.href = "dashboard.html";
+                } else {
+                    alert(data.message || 'Invalid or expired code.');
+                }
+            } catch (err) {
+                console.error('Error:', err);
+                alert('Verification failed!');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
